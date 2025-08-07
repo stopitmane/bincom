@@ -4,73 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajayi John's Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Ajayi John</h1>
         <p>Web Developer | Front-End Developer | Problem Solver</p>
+        <div class="header-icons">
+            <i class="fas fa-code"></i>
+            <i class="fas fa-palette"></i>
+            <i class="fas fa-lightbulb"></i>
+        </div>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </nav>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome! I'm Ajayi John, Front-End Developer specializing in modern web technologies.. With expertise in Python, JavaScript, and NLP, I enjoy creating impactful solutions.</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome! I'm Ajayi John, a passionate Front-End Developer specializing in modern web technologies. With expertise in Python, JavaScript, and NLP, I enjoy creating impactful solutions that make a difference.</p>
+                <p>I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional. Every project is an opportunity to learn and grow.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <div class="skill-items">
+                    <span class="skill-item">HTML5</span>
+                    <span class="skill-item">CSS3</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">React</span>
+                    <span class="skill-item">Vue.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Node.js</span>
+                    <span class="skill-item">Express.js</span>
+                    <span class="skill-item">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Vercel</span>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>FreshCandy Ecommerce Website</h3>
-            <p>An Ecommerce web application that showcases my skills in HTML, CSS, and JavaScript.</p>
-            <a href="https://freshcart-candy-com.vercel.app/" target="_blank">View on Vercel</a>
-        </div>
-        <div class="project">
-            <h3>Company Website [Scitech]</h3>
-            <p>A React-based Company website dashboard for managing tasks and productivity.</p>
-            <a href="https://sci-tech.vercel.app/" target="_blank">View on Vercel</a>
-        </div>
-        <div class="project">
-            <h3>TimbuCloud Website</h3>
-            <p>An Ecommerce web application that showcases my skills in HTML, CSS, and JavaScript.</p>
-            <a href="https://timbucloudwebsite.vercel.app/" target="_blank">View on Vercel</a>
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-header">
+                    <h3>FreshCandy Ecommerce Website</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+                <p>An Ecommerce web application that showcases my skills in HTML, CSS, and JavaScript. Features a modern, responsive design with smooth animations and user-friendly interface.</p>
+                <div class="project-links">
+                    <a href="https://freshcart-candy-com.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="project-link secondary">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <h3>Company Website [Scitech]</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <p>A React-based Company website dashboard for managing tasks and productivity. Includes real-time updates, user authentication, and comprehensive project management features.</p>
+                <div class="project-links">
+                    <a href="https://sci-tech.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="project-link secondary">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <h3>TimbuCloud Website</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+                <p>An Ecommerce web application that showcases my skills in HTML, CSS, and JavaScript. Features a modern, responsive design with smooth animations and user-friendly interface.</p>
+                <div class="project-links">
+                    <a href="https://timbucloudwebsite.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="project-link secondary">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     
     <section id="gallery">
-        <h2>Gallery</h2>
+        <h2>Portfolio Gallery</h2>
         <div class="gallery">
-            <img src="image1.jpg" alt="Picture 1">
-            <img src="image3.jpg" alt="Picture 3">
-            <img src="image4.jpg" alt="Picture 4">
-            <img src="image5.jpg" alt="Picture 5">
+            <img src="image1.jpg" alt="Project Screenshot 1" loading="lazy">
+            <img src="image3.jpg" alt="Project Screenshot 2" loading="lazy">
+            <img src="image4.jpg" alt="Project Screenshot 3" loading="lazy">
+            <img src="image5.jpg" alt="Project Screenshot 4" loading="lazy">
         </div>
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>ajayi.john@example.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <span>+234 123 456 7890</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lagos, Nigeria</span>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2024 groovyjwttp. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ajayi John</h4>
+                <p>Web Developer & Problem Solver</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ajayi John. All rights reserved.</p>
+        </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
